@@ -5,19 +5,8 @@ Console.Clear();
 Console.Write("Введите желаемое количество чисел через пробел: ");
 
 
-int[] InputData = Console.ReadLine().Split(' ',StringSplitOptions.RemoveEmptyEntries).Select(int.Parse).ToArray();
+int[] InputData = Console.ReadLine().Split(' ',StringSplitOptions.RemoveEmptyEntries).Select(int.Parse).ToArray(); // преобразование строки в int
 
-int[] GetArray(int size, int minValue, int maxValue) // Функция создания массива
-{
-    int[] res = new int[size];
-
-    for (int i = 0; i < size; i++)
-    {
-        res[i] = new Random(). Next(minValue, maxValue + 1);
-    }
-    return res;
-
-}
 
 int countPos = 0;
 
